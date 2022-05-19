@@ -2,12 +2,14 @@ import * as React from 'react';
 import {
   Text, 
   View,
-  SafeAreaView 
+  SafeAreaView ,
+  Button
 } from 'react-native';
 import { Avatar } from 'react-native-paper';
 
 
 import Carousel from 'react-native-snap-carousel';
+import App2 from './App2';
 
 export default class App extends React.Component {
 
@@ -61,14 +63,16 @@ export default class App extends React.Component {
             <View style={{
               flexDirection :'row',
             }}>
-            <Avatar.Image size={50} source={require('C:/Users/d/Downloads/teachr/images/apple.jpg')} />
-            <Text style={{fontSize: 22, marginLeft: 15}}>{item.name}</Text>
+            <Avatar.Image size={55} source={require('C:/Users/d/Downloads/teachr/images/apple.jpg')} />
+            <Text style={{fontSize: 22, marginLeft: 15,}}>{item.name}</Text>
             </View>
-            <Text>{formationText}</Text>
-            <Text>{item.formation}</Text>
-            <Text>{descriptionText}</Text>
-            <Text>{item.description}</Text>
+            <Text style={{marginTop: 35, color:'grey'}}>{formationText}</Text>
+            <Text style={{marginTop: 5, lineHeight:20, fontWeight:'bold'}}>{item.formation}</Text>
+            <Text style={{marginTop: 30}}>{descriptionText}</Text>
+            <Text style={{marginTop: 5, lineHeight:20, fontWeight:'bold'}}>{item.description}</Text>
+            <Button style={{color:'white',backgroundColor:'red'}} title="Press me" />
           </View>
+          
 
         )
     }
@@ -86,7 +90,9 @@ export default class App extends React.Component {
                   renderItem={this._renderItem}
                   onSnapToItem = { index => this.setState({activeIndex:index}) } />
             </View>
+
           </SafeAreaView>
+
         );
     }
 }
