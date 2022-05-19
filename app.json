@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "carousel-simple-example",
+    "slug": "snack-881f2c6f-4f1a-4134-81f9-48f9c8d70071",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Simple example for react-native-snap-carousel\n\nhttps://github.com/archriss/react-native-snap-carousel"
+  }
+}
