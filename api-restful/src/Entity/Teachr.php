@@ -7,10 +7,18 @@ use App\Repository\TeachrRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: TeachrRepository::class)]
-#[ApiResource(
-    collectionOperations: ['get','post'],
-    itemOperations: ['put'],
-)]
+/**
+ * @ApiResource(
+ *     itemOperations={
+ *         "get"={
+ *             "method"="GET",
+ *             "controller"=NotFoundAction::class,
+ *             "read"=false,
+ *             "output"=false,
+ *         },
+ *     },
+ * )
+ */
 class Teachr
 {
     #[ORM\Id]

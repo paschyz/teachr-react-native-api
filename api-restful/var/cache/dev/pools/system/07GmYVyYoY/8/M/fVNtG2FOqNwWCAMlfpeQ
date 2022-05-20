@@ -1,4 +1,4 @@
-<?php //property_metadata_78676248d16958510de8e8399ca57ad4
+<?php //property_metadata_06a932879e8ffbf43aa05738b3b6e731
 
 return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
     $o = [
@@ -15,7 +15,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 true,
             ],
             'writable' => [
-                false,
+                true,
             ],
             'required' => [
                 false,
