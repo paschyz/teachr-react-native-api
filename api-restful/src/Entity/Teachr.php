@@ -10,12 +10,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ApiResource(
  *     itemOperations={
- *         "get"={
- *             "method"="GET",
- *             "controller"=NotFoundAction::class,
- *             "read"=false,
- *             "output"=false,
- *         },
+ *         "put"={
+ *              "method"="PUT",
+ *              "normalization_context"={"groups"={"item.write", "item_words.write"}},
+ *          },
  *     },
  * )
  */

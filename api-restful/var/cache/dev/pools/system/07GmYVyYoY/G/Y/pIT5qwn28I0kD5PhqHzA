@@ -1,4 +1,4 @@
-<?php //property_metadata_06a932879e8ffbf43aa05738b3b6e731
+<?php //property_metadata_667ede572806632e41210360b86107c0
 
 return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
     $o = [
@@ -12,16 +12,16 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 $o[1],
             ],
             'readable' => [
-                true,
+                false,
             ],
             'writable' => [
-                true,
+                false,
             ],
             'required' => [
                 false,
             ],
             'identifier' => [
-                false,
+                true,
             ],
             'initializable' => [
                 false,
@@ -29,13 +29,10 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
         ],
         'Symfony\\Component\\PropertyInfo\\Type' => [
             'builtinType' => [
-                1 => 'object',
+                1 => 'int',
             ],
             'nullable' => [
                 1 => false,
-            ],
-            'class' => [
-                1 => 'DateTimeImmutable',
             ],
             'collection' => [
                 1 => false,

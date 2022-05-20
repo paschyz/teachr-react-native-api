@@ -15,15 +15,16 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
             ],
             'itemOperations' => [
                 [
-                    'get' => [
-                        'method' => 'GET',
-                        'controller' => 'NotFoundAction',
-                        'read' => false,
-                        'output' => [
-                            'class' => null,
+                    'put' => [
+                        'method' => 'PUT',
+                        'normalization_context' => [
+                            'groups' => [
+                                'item.write',
+                                'item_words.write',
+                            ],
                         ],
                         'input' => null,
-                        'status' => 204,
+                        'output' => null,
                         'stateless' => null,
                         'input_formats' => [
                             'jsonld' => [

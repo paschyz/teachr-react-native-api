@@ -9,11 +9,14 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
         'stdClass' => [
             'itemOperations' => [
                 [
-                    'get' => [
-                        'method' => 'GET',
-                        'controller' => 'NotFoundAction',
-                        'read' => false,
-                        'output' => false,
+                    'put' => [
+                        'method' => 'PUT',
+                        'normalization_context' => [
+                            'groups' => [
+                                'item.write',
+                                'item_words.write',
+                            ],
+                        ],
                     ],
                 ],
             ],

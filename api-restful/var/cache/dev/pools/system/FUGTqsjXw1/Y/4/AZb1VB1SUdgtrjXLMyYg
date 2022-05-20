@@ -1,3 +1,0 @@
-<?php //route_name_4f30404cd1f3ad0b51b8e097cda28844
-
-return [PHP_INT_MAX, 'api_teachrs_get_collection'];
