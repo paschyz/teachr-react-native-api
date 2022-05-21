@@ -7,17 +7,16 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
     null,
     [
         'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'get',
+                    'post',
+                ],
+            ],
             'itemOperations' => [
                 [
-                    'put' => [
-                        'method' => 'PUT',
-                        'normalization_context' => [
-                            'groups' => [
-                                'item.write',
-                                'item_words.write',
-                            ],
-                        ],
-                    ],
+                    'get',
+                    'put',
                 ],
             ],
         ],

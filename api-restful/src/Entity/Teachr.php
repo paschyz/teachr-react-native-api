@@ -9,12 +9,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: TeachrRepository::class)]
 /**
  * @ApiResource(
- *     itemOperations={
- *         "put"={
- *              "method"="PUT",
- *              "normalization_context"={"groups"={"item.write", "item_words.write"}},
- *          },
- *     },
+ *     collectionOperations={"get","post"},
+ *     itemOperations={"get", "put"}
  * )
  */
 class Teachr
