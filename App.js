@@ -83,6 +83,11 @@ const App = () => {
           padding: 25,
           marginLeft: 32,
           marginRight: 0,
+
+          shadowColor: "#171717",
+          shadowOffset: { width: 0, height: 0 },
+          shadowOpacity: 0.2,
+          shadowRadius: 4,
         }}
       >
         <View
@@ -94,7 +99,7 @@ const App = () => {
             size={55}
             source={{ uri: "https://picsum.photos/700" }}
           />
-          <Text style={{ fontSize: 22, marginLeft: 15, maxWidth: 130 }}>
+          <Text style={{ fontSize: 22, marginLeft: 20, maxWidth: 130 }}>
             {item.name}
           </Text>
         </View>
@@ -162,9 +167,7 @@ const App = () => {
   }
 
   return (
-    <SafeAreaView
-      style={{ flex: 1, backgroundColor: "rebeccapurple", paddingTop: 50 }}
-    >
+    <SafeAreaView style={{ flex: 1, backgroundColor: "white", paddingTop: 50 }}>
       <View style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}>
         <Carousel
           layout={"default"}
