@@ -77,9 +77,9 @@ const App = () => {
     return (
       <View
         style={{
-          backgroundColor: "floralwhite",
-          borderRadius: 5,
-          height: 400,
+          backgroundColor: "white",
+          borderRadius: 10,
+          height: 450,
           padding: 25,
           marginLeft: 32,
           marginRight: 0,
@@ -94,7 +94,9 @@ const App = () => {
             size={55}
             source={{ uri: "https://picsum.photos/700" }}
           />
-          <Text style={{ fontSize: 22, marginLeft: 15 }}>{item.name}</Text>
+          <Text style={{ fontSize: 22, marginLeft: 15, maxWidth: 130 }}>
+            {item.name}
+          </Text>
         </View>
         <Text style={{ marginTop: 35, color: "#a8adad", fontWeight: "bold" }}>
           {formationText}
@@ -108,9 +110,53 @@ const App = () => {
         <Text style={{ marginTop: 5, lineHeight: 20, fontWeight: "bold" }}>
           {item.description}
         </Text>
-        {/* <TouchableOpacity>
-          <Text>Hello</Text>
-        </TouchableOpacity> */}
+        <TouchableOpacity
+          style={{
+            backgroundColor: "#0361D0",
+            paddingTop: 10,
+            paddingBottom: 10,
+            paddingLeft: 10,
+            paddingRight: 10,
+            borderRadius: 10,
+            marginTop: 30,
+          }}
+        >
+          <Text
+            style={{
+              color: "white",
+              textAlign: "center",
+              fontWeight: "bold",
+              fontSize: "13",
+            }}
+          >
+            Prendre un cours avec ce Teach'r
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "white",
+            paddingTop: 10,
+            paddingBottom: 10,
+            paddingLeft: 10,
+            paddingRight: 10,
+            borderRadius: 10,
+            marginTop: 15,
+            borderWidth: 2,
+            borderStyle: "solid",
+            borderColor: "#f06b61",
+          }}
+        >
+          <Text
+            style={{
+              color: "#f06b61",
+              textAlign: "center",
+              fontWeight: "bold",
+              fontSize: "13",
+            }}
+          >
+            Retirer ce Teach'r de mes favoris
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }
