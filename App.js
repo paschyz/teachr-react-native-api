@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Text, View, SafeAreaView, TouchableOpacity } from "react-native";
 import { Avatar } from "react-native-paper";
-
 import Carousel from "react-native-snap-carousel";
+
+console.disableYellowBox = true;
 
 const App = () => {
   const [activeIndex, setActiveIndex] = useState(0);
