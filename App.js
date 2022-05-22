@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Text, View, SafeAreaView } from "react-native";
+import { Text, View, SafeAreaView, TouchableOpacity } from "react-native";
 import { Avatar } from "react-native-paper";
 
 import Carousel from "react-native-snap-carousel";
-import { TouchableOpacity } from "react-native-web";
 
 const App = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,27 +11,63 @@ const App = () => {
       name: "Pierre du Parc de Locmania",
       formation: "Université Paris Dauphine",
       description:
-        "Calme et patient, je sais m'adapter à l'élève,feznzjnfejnfzejnfenzeni ni nifzize n finz fezi",
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
     },
     {
-      name: "Name 2",
-      formation: "Formation 2",
-      description: "Description 5",
+      name: "Estelle Benitez",
+      formation: "Sorbonne Université",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
     },
     {
-      name: "Name 3",
-      formation: "Formation 3",
-      description: "Description 5",
+      name: "John Frey",
+      formation: "Institut Universitaire Saint-Pie X",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
     },
     {
-      name: "Name 4",
-      formation: "Formation 4",
-      description: "Description 5",
+      name: "Ellie-Rose Marsh",
+      formation:
+        "Institut de Physique du Globe de Paris (IPGP) - CNRS - Université Paris Cité",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
     },
     {
-      name: "Name 5",
-      formation: "Formation 5",
-      description: "Description 5",
+      name: "Luca Bravo",
+      formation: "Université Paris Dauphine",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
+    },
+    {
+      name: "Filip Rosario",
+      formation: "Sorbonne Université",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
+    },
+    {
+      name: "Mariana Leon",
+      formation: "Institut Universitaire Saint-Pie X",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
+    },
+    {
+      name: "Taran Leblanc",
+      formation: "Université Paris-Cité - Institut de Psychologie",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
+    },
+    {
+      name: "Rubi Hirst",
+      formation:
+        "Institut de Physique du Globe de Paris (IPGP) - CNRS - Université Paris Cité",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
+    },
+    {
+      name: "Alexia Bernal",
+      formation: "Université Paris Dauphine",
+      description:
+        "Calme et patient, je sais m'adapter à l'élève, et comprendre sa méthode d'apprentissage afin de l'aider à progresser au mieux",
     },
   ]);
 
@@ -61,16 +96,20 @@ const App = () => {
           />
           <Text style={{ fontSize: 22, marginLeft: 15 }}>{item.name}</Text>
         </View>
-        <Text style={{ marginTop: 35, color: "grey" }}>{formationText}</Text>
+        <Text style={{ marginTop: 35, color: "#a8adad", fontWeight: "bold" }}>
+          {formationText}
+        </Text>
         <Text style={{ marginTop: 5, lineHeight: 20, fontWeight: "bold" }}>
           {item.formation}
         </Text>
-        <Text style={{ marginTop: 30 }}>{descriptionText}</Text>
+        <Text style={{ marginTop: 30, color: "#a8adad", fontWeight: "bold" }}>
+          {descriptionText}
+        </Text>
         <Text style={{ marginTop: 5, lineHeight: 20, fontWeight: "bold" }}>
           {item.description}
         </Text>
-        {/* <TouchableOpacity color="black" backgroundColor="red">
-          <Text>Login</Text>
+        {/* <TouchableOpacity>
+          <Text>Hello</Text>
         </TouchableOpacity> */}
       </View>
     );
