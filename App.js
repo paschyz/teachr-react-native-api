@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Text, View, SafeAreaView, TouchableOpacity } from "react-native";
 import { Avatar } from "react-native-paper";
 import Carousel from "react-native-snap-carousel";
+import { Icon } from "react-native-eva-icons";
 
 console.disableYellowBox = true;
 
@@ -84,6 +85,7 @@ const App = () => {
           padding: 25,
           marginLeft: 32,
           marginRight: 0,
+          marginTop: 10,
 
           shadowColor: "#171717",
           shadowOffset: { width: 0, height: 0 },
@@ -119,10 +121,7 @@ const App = () => {
         <TouchableOpacity
           style={{
             backgroundColor: "#0361D0",
-            paddingTop: 10,
-            paddingBottom: 10,
-            paddingLeft: 10,
-            paddingRight: 10,
+            padding: 10,
             borderRadius: 10,
             marginTop: 30,
           }}
@@ -131,7 +130,7 @@ const App = () => {
             style={{
               color: "white",
               textAlign: "center",
-              fontWeight: "bold",
+              fontWeight: "600",
               fontSize: "13",
             }}
           >
@@ -156,8 +155,8 @@ const App = () => {
             style={{
               color: "#f06b61",
               textAlign: "center",
-              fontWeight: "bold",
               fontSize: "13",
+              fontWeight: "600",
             }}
           >
             Retirer ce Teach'r de mes favoris
@@ -168,8 +167,40 @@ const App = () => {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "white", paddingTop: 50 }}>
-      <View style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: "#0361D0", paddingTop: 50 }}
+    >
+      <View style={{}}>
+        <Icon
+          name="arrow-ios-back-outline"
+          fill="white"
+          height={50}
+          width={80}
+          style={{}}
+        ></Icon>
+        <Text
+          style={{
+            color: "white",
+            fontSize: 35,
+            fontWeight: "400",
+            fontFamily: "sans-serif",
+            paddingBottom: 45,
+            paddingLeft: 30,
+            marginTop: 20,
+          }}
+        >
+          Teach'rs favoris
+        </Text>
+      </View>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: "row",
+          justifyContent: "center",
+          backgroundColor: "white",
+          paddingTop: 25,
+        }}
+      >
         <Carousel
           layout={"default"}
           // ref={ref => this.carousel = ref}
