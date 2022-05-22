@@ -92,7 +92,7 @@ const App = () => {
         >
           <Avatar.Image
             size={55}
-            source={require("C:/Users/d/Downloads/teachr/images/apple.jpg")}
+            source={{ uri: "https://picsum.photos/700" }}
           />
           <Text style={{ fontSize: 22, marginLeft: 15 }}>{item.name}</Text>
         </View>
